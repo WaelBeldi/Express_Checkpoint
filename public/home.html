@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>J!NX Store</title>
+</head>
+
+<body>
+    <div id="home"></div>
+
+    <header>
+        <div class="main__header">
+            <nav class="nav">
+                <img class="logo" src="./img/jinx.png" alt="J!NX Store" />
+                <ul class="nav__links">
+                    <li class="storelink"><a href="./home.html">Store</a></li>
+                    <li class="storelink"><a href="./ourServices.html">Our Services</a></li>
+                    <li class="storelink"><a href="./contactUs.html">Contact Us</a></li>
+                    <li class="cart">
+                        <a href="">
+                            <ion-icon name="cart"></ion-icon> Cart (<span class="total-items-in-cart">0</span> )
+                        </a>
+                        <h5 class="total">Total: $0</h5>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="products" id="#productsSection">
+            <!-- products rendred here -->
+        </div>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+    <script src="./products.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>

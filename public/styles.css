@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+main {
+  margin-top: 9rem;
+}
+
+/*--------------------------------------------HEADER--------------------------------------------*/
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+  background: rgba(0, 0, 0, 0.98);
+  box-shadow: 0 1px 4px 0 rgb(0 0 0 / 5%);
+}
+
+.main__header {
+  max-width: 1366px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+  background-color: #000;
+}
+
+.logo {
+  max-height: 100px;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  float: left;
+  display: inline;
+}
+
+.nav__links {
+  display: flex;
+  padding: 5px;
+}
+.nav__links .storelink {
+  display: flex;
+  padding: 3px;
+}
+.nav__links .cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav__links li {
+  display: inline-block;
+  list-style: none;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.nav__links li span {
+  padding-left: 5px;
+}
+
+.nav__links li a {
+  padding: 5px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+.nav__links .cart ion-icon {
+  vertical-align: middle;
+  font-size: 20px;
+  padding-right: 5px;
+}
+
+.nav__links .cart a {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  border: 0 none;
+  border-radius: 3px;
+}
+
+.nav__links .cart h5 {
+  padding: 5px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+/*--------------------------------------------PRODUCTS__SECTION--------------------------------------------*/
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  margin: 50px auto 50px;
+  max-width: 1366px;
+}
+
+.products .item {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 50px;
+}
+.products img {
+  width: 100%;
+}
+
+.product-title {
+  font-weight: bolder;
+  color: #737373;
+  font-size: 1.3em;
+}
+
+.product-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.3em;
+  margin-bottom: 4px;
+}
+
+.add-cart,
+.contact_button {
+  background-color: black;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.3em;
+  width: 100%;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(to left, black 50%, white 50%) right;
+  background-size: 200%;
+  transition: 0.5s ease-out;
+  border: 1px solid #000;
+}
+
+.add-cart:hover,
+.contact_button:hover {
+  color: #000;
+  background-position: left;
+}
+
+/*--------------------------------------------OUR__SERVICES--------------------------------------------*/
+.our__services__main {
+  max-width: 1000px;
+  margin: 9rem auto 2rem;
+}
+
+.our__services__main h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-style: normal;
+  font-size: 48px;
+}
+
+.our__services__main p {
+  line-height: 20px;
+}
+
+.our__services__main h2 {
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 1em;
+  margin-bottom: 1rem;
+}
+
+.our__services__main img {
+  display: block;
+  max-width: 900px;
+  margin: 1rem auto;
+}
+
+.contact_button {
+  width: 10rem;
+  display: block;
+  margin: 0 auto;
+}
+
+/*--------------------------------------------CONTACT_US--------------------------------------------*/
+.contact__us__main {
+  width: 1200px;
+  margin: 9rem auto 2rem;
+}
+
+.contact__us__main img {
+  display:block;
+  max-width: 1000px;
+  margin-inline: auto;
+}
