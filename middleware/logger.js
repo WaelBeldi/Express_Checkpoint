@@ -1,12 +1,14 @@
-// const img = require('../public/img/closed.webp')
 let date = new Date();
 
 let currentHour = date.getHours();
 
 let currentDay = date.getDay();
 
+console.log(currentHour);
+console.log(currentDay);
+
 const logger = (req, res, next) => {
-    if (currentHour>9 && currentHour<17 && currentDay>0 && currentDay<6) {
+    if (currentHour>=9 && currentHour<=17 && currentDay>0 && currentDay<6) {
         next();
     } else {
         res.send(`
